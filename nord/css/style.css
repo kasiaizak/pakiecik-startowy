@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.slide1,
+.slide2,
+.slide3,
+.slide4 {
+    height: 100vh;
+    width: 100%;
+}
+
+.slide1 {
+    background-image: linear-gradient(120deg, #f9f9f9 40%, #41e0d8 5%, #41e0d8 55%);
+}
+
+.slide2 {
+    background-image: linear-gradient(60deg, #262a34 60%, #f9f9f9 40%);
+}
+
+.slide3 {
+    background-image: linear-gradient(60deg, #f9f9f9 60%, #41e0d8 40%);
+}
+
+.slide4 {
+    background-image: linear-gradient(180deg, #262a34 50%, #f9f9f9 50%);
+}
