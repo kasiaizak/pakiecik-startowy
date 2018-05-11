@@ -14,15 +14,15 @@
 }
 
 .slide1 {
-    background-image: linear-gradient(120deg, #f9f9f9 40%, #41e0d8 5%, #41e0d8 55%);
+    background-image: linear-gradient(120deg, #f9f9f9 40%, #41e0d8 40%);
 }
 
 .slide2 {
-    background-image: linear-gradient(60deg, #262a34 60%, #f9f9f9 40%);
+    background-image: linear-gradient(60deg, #262a34 70%, #f9f9f9 30%);
 }
 
 .slide3 {
-    background-image: linear-gradient(60deg, #f9f9f9 60%, #41e0d8 40%);
+    background-image: linear-gradient(60deg, #f9f9f9 40%, #41e0d8 40%);
 }
 
 .slide4 {
