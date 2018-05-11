@@ -7,6 +7,8 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+/* bacgrounds start */
 .slide1,
 .slide2,
 .slide3,
@@ -38,3 +40,15 @@ body {
 footer {
     background-color: #f9f9f9;
 }
+/* bacgrounds end */
+
+/* slide1 start */
+.slide1 .second {
+    height: 100%;
+}
+
+.slide1 .second .second-content {
+    height: 60%;
+    margin-top: auto;
+}
+/* slide1 end */
