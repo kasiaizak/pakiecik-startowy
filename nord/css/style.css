@@ -12,6 +12,9 @@ body,
     line-height: 200%;
 }
 
+p {
+    padding-top: 40px;
+}
 /* fonts colors start */
 h1,
 .slide1 .first .navigation ul li a,
@@ -91,17 +94,44 @@ footer a {
     transform: translateY(100px);
     z-index: 1;
 }
-
-.slide1 .second .second-content p {
-    padding-top: 40px;
-}
 /* slide1 end */
 
 /* slide2 start */
+.slide2 .vertical-center {
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+.myimage {
+    width: 228px;
+    height: 404px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.myimage-1 {
+    background-image: url(../img/blueberry.jpg);
+}
+.myimage-2 {
+    background-image: url(../img/cobblestone.jpg);
+}
+.myimage-3 {
+    background-image: url(../img/grass.jpg);
+}
+.myimage-4 {
+    background-image: url(../img/seemed.jpg);
+}
 /* slide2 end */
 
 /* slide3 start */
 /* slide3 end */
 
-/* slide3 start */
-/* slide3 end */
+/* slide4 start */
+.slide4 form div {
+    display: inline-block;
+}
+/* slide4 end */
