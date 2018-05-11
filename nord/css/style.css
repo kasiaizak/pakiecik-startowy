@@ -9,13 +9,18 @@ body,
 .slide1 .second .second-content span {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
+    line-height: 200%;
 }
 
 /* fonts colors start */
 h1,
 .slide1 .first .navigation ul li a,
 .slide1 .second .second-content span {
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.slide1 .second .second-content span {
+    font-style: italic;
 }
 
 .slide1 .second .second-content h1,
@@ -82,9 +87,13 @@ footer a {
     transform: translateY(25%);
 }
 
-.slide1 .second img {
+.slide1 .second .second-content {
     transform: translateY(100px);
     z-index: 1;
+}
+
+.slide1 .second .second-content p {
+    padding-top: 40px;
 }
 /* slide1 end */
 
