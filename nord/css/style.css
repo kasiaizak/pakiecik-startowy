@@ -15,7 +15,9 @@ body,
 p {
     padding-top: 40px;
 }
+
 /* fonts colors start */
+
 h1,
 .slide1 .first .navigation ul li a,
 .slide1 .second .second-content span {
@@ -32,12 +34,12 @@ footer {
     color: #3c3d41;
 }
 
-.slide3 p span,
+.slide3 blockquote footer,
 footer a {
     color: #41e0d8;
 }
-/* fonts colors end */
 
+/* fonts colors end */
 
 /* bacgrounds start */
 .slide1,
@@ -45,6 +47,7 @@ footer a {
 .slide3 {
     height: 100vh;
     width: 100%;
+    overflow: hidden;
 }
 
 .slide1 {
@@ -68,9 +71,11 @@ footer a {
 .slide5 {
     background-color: #f9f9f9;
 }
+
 /* bacgrounds end */
 
 /* slide1 start */
+
 .slide1 .first .navigation ul li {
     display: inline-block;
     padding: 15px 40px;
@@ -94,9 +99,11 @@ footer a {
     transform: translateY(100px);
     z-index: 1;
 }
+
 /* slide1 end */
 
 /* slide2 start */
+
 .slide2 .vertical-center {
     top: 50vh;
     transform: translateY(-50%);
@@ -116,22 +123,29 @@ footer a {
 .myimage-1 {
     background-image: url(../img/blueberry.jpg);
 }
+
 .myimage-2 {
     background-image: url(../img/cobblestone.jpg);
 }
+
 .myimage-3 {
     background-image: url(../img/grass.jpg);
 }
+
 .myimage-4 {
     background-image: url(../img/seemed.jpg);
 }
+
 /* slide2 end */
 
 /* slide3 start */
+
 /* slide3 end */
 
 /* slide4 start */
+
 .slide4 form div {
     display: inline-block;
 }
+
 /* slide4 end */
