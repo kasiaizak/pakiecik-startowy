@@ -88,7 +88,6 @@ footer a {
     top: 50vh;
     transform: translateY(-50%);
 }
-
 /* bacgrounds end */
 
 /* slide1 start */
@@ -141,30 +140,27 @@ footer a {
 }
 
 .myimage {
-    width: 228px;
-    height: 404px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    max-width: 228px;
+    max-height: 404px;
     margin-left: auto;
     margin-right: auto;
-    display: none;
 }
 
-.myimage-1 {
-    background-image: url(../gallery/blueberry.jpg);
+#slide2 .carousel-indicators,
+#slide3 .carousel-indicators {
+    bottom: -50px;
 }
 
-.myimage-2 {
-    background-image: url(../gallery/cobblestone.jpg);
+#slide2 .carousel-indicators li,
+#slide3 .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
 }
 
-.myimage-3 {
-    background-image: url(../gallery/grass.jpg);
-}
-
-.myimage-4 {
-    background-image: url(../gallery/seemed.jpg);
+#slide2 .carousel-indicators .active,
+#slide3 .carousel-indicators .active {
+    width: 20px;
 }
 
 /* slide2 end */
@@ -186,13 +182,26 @@ footer a {
     width: 100%;
 }
 
+#slide3 blockquote,
+.blockquote-center {
+    width: 616px;
+}
+
+.blockquote-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #slide3 blockquote {
     background-image: url(../img/baloon.png);
     background-repeat: no-repeat;
-    width: 616px;
     height: 233px;
     padding: 10px 75px 15px 75px;
     margin-top: 15vh;
+}
+
+#slide3 blockquote footer {
+    padding-top: 0;
 }
 
 /* slide3 end */
