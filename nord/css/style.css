@@ -6,71 +6,81 @@
 
 body,
 #navigation ul li a,
-#navigation ul li a:visited,
-.slide1 .second .second-content span {
+#navigation ul li a:visited {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     line-height: 200%;
-    min-width: 648px;
+    font-size: 15px;
 }
 
-p {
+p,
+#slide4 h1 {
     padding-top: 40px;
 }
 
-/* fonts colors start */
-
-h1,
-#navigation ul li a,
-#navigation label,
-.slide1 .second .second-content span {
+/* fonts size & colors start */
+h1 {
+    font-size: 43px;
     font-weight: 700;
 }
 
-.slide1 .second .second-content span {
-    font-style: italic;
+h1 span,
+#navigation ul li a,
+#navigation label {
+    font-weight: 600;
 }
 
-.slide1 .second .second-content h1,
-.slide3 p,
+#slide1 .second .second-content h1,
+#slide3 p,
 footer {
     color: #3c3d41;
 }
 
-.slide3 blockquote footer,
+#slide1 .second .second-content h1 span {
+    font-style: italic;
+    color: #fff;
+}
+
+#slide3 blockquote footer,
+#slide4 form input[type="submit"],
 footer a {
     color: #41e0d8;
 }
 
-/* fonts colors end */
+#slide2 button,
+#slide4 form input[type="submit"] {
+    padding: 5px 30px 5px 30px;
+}
+
+/* fonts size & colors end */
 
 /* bacgrounds start */
 
-.slide1,
-.slide2,
-.slide3 {
+#slide1,
+#slide2,
+#slide3 {
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.slide1 {
+#slide1 {
     background-image: linear-gradient(120deg, #f9f9f9 37%, #41e0d8 37%);
 }
 
-.slide2 {
+#slide2 {
     background-image: linear-gradient(60deg, #262a34 65%, #f9f9f9 35%);
 }
 
-.slide3 {
+#slide3 {
     background-image: linear-gradient(60deg, #f9f9f9 37%, #41e0d8 37%);
 }
 
-.slide4 {
+#slide4 {
     background-color: #262a34;
 }
 
-.slide5 {
+#slide5 {
     background-color: #f9f9f9;
 }
 
@@ -83,7 +93,12 @@ footer a {
 
 /* slide1 start */
 
-#navigation input, #navigation label {
+#slide1 figure {
+    padding-top: 20px;
+}
+
+#navigation input,
+#navigation label {
     display: none;
 }
 
@@ -106,17 +121,24 @@ footer a {
     text-decoration: none;
 }
 
-.slide1 .second .phone {
+#slide1 .second .phone {
     transform: translateY(25%);
 }
 
-.slide1 .second .second-content {
+#slide1 .second .second-content {
     padding-top: 15vh;
 }
 
 /* slide1 end */
 
 /* slide2 start */
+
+#slide2 button {
+    background-color: #41e0d8;
+    border: none;
+    color: #fff;
+    margin-top: 40px;
+}
 
 .myimage {
     width: 228px;
@@ -148,43 +170,47 @@ footer a {
 /* slide2 end */
 
 /* slide3 start */
-.slide3 div .phone,
-.slide3 div .reviews {
-    display: inline-block
+#slide3 .slide3-element {
+    transform: translateY(-70vh);
 }
 
-.slide3 .phone {
+#slide3 .phone {
     background-image: url(../img/phone.png);
     background-repeat: no-repeat;
-    transform: translateY(25%) rotate(-30deg);
+    transform: translateY(30%) rotate(-30deg);
     height: 630px;
     width: 311px;;
 }
 
-.slide3 .reviews {
-    height: 100%;
-    width: 50%;
+#slide3 .slide3-element {
+    width: 100%;
 }
 
-.slide3 h1 {
-    padding-top: 20vh;
-}
-
-.slide3 blockquote {
+#slide3 blockquote {
     background-image: url(../img/baloon.png);
     background-repeat: no-repeat;
     width: 616px;
     height: 233px;
     padding: 10px 75px 15px 75px;
-    margin: auto;
+    margin-top: 15vh;
 }
 
 /* slide3 end */
 
 /* slide4 start */
 
-.slide4 form div {
-    display: inline-block;
+#slide4 form,
+footer {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    width: 100%
 }
 
+#slide4 form input[type="email"] {
+    background-color: #51555d;
+    border: none;
+    width: 40%;
+    padding: 7px;
+    color: #fff;
+}
 /* slide4 end */

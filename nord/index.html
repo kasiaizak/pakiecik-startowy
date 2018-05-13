@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="slide1">
+    <div id="slide1">
         <div class="container">
             <div class="row first">
                 <figure class="col-2"><img src="img/logo.png" alt=""></figure>
@@ -28,7 +28,7 @@
             </div>
             <div class="row second">
                 <div class="col-lg-6 phone"><img src="img/phone.png" alt=""></div>
-                <div class="col-lg-6 second-content">
+                <div class="col-lg-6 second-content vertical-center">
                     <h1>Join more than <span>1000+</span> satisfied users</h1>
                     <p>People are definitely a company's greatest asset.<br> It doesn't make any difference<br> whether the product is cars or cosmetics.<br> A company is only as good as the people it keeps.</p>
                     <p><a href="#"><img src="img/play_button.png" alt="Play"></a></p>
@@ -36,15 +36,15 @@
             </div>
         </div>
     </div>
-    <div class="slide2">
+    <div id="slide2">
         <div class="container" id="getit">
             <div class="row">
-                <div class="col-lg-6 vertical-center">
+                <div class="col-lg-5 vertical-center">
                     <h1>What you get</h1>
-                    <p>People are definitely a company's greatest asset.<br> It doesn't make any difference whether the product is cars or cosmetics.<br> A company is only as good as the people it keeps.</p>
-                    <button>Get it now</button>
+                    <p>People are definitely a company's greatest asset.<br> It doesn't make any difference<br> whether the product is cars or cosmetics.<br> A company is only as good as the people it keeps.</p>
+                    <button class="text-uppercase">Get it now</button>
                 </div>
-                <div class="col-lg-6 vertical-center">
+                <div class="col-lg-7 vertical-center">
                     <!--<div id="gallery" class="gallery-slider" data-ride="carousel">
                         <div class="gallery-inner">
                             <div class="myimage myimage-1"></div>
@@ -63,13 +63,19 @@
             </div>
         </div>
     </div>
-    <div class="slide3">
+    <div id="slide3">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 phone"></div>
-                <div class="col-lg-8 reviews text-center">
+            <div class="row phone"></div>
+            <div class="row slide3-element">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-10 text-center">
                     <h1>Some words from our users</h1>
                     <p>People are definitely a company's greatest asset.<br> It doesn't make any difference</p>
+                </div>
+            </div>
+            <div class="row slide3-element">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8">
                     <blockquote class="text-left">
                         <p>People are definitely a company's greatest asset. It doesn't make any difference whether the product is cars or cosmetics. A company is only as good as the people it keeps.</p>
                         <footer>John Doe</footer>
@@ -78,20 +84,20 @@
             </div>
         </div>
     </div>
-    <div class="slide4">
+    <div id="slide4">
         <div class="container text-center" id="subscribe">
             <h1>Join us</h1>
             <p>We will send you from time to time<br> mail about our news and offers</p>
             <form action="https://formspree.io/katarzynaizak@noreply.com" method="POST">
-                <div><input type="email" name="email" placeholder="Your Mail"></div>
-                <div><input type="submit" id="przycisk" value="Send"></div>
+                <input type="email" name="email" placeholder="Your Mail">
+                <input type="submit" value="Send" class="text-uppercase">
             </form>
         </div>
     </div>
-    <footer class="slide5">
+    <footer id="slide5">
         <div class="container text-center">
             <figure><img src="img/logo.png" alt=""></figure>
-            <div class="credits">C 2016 - <a href="#">NORD</a> All Rights Reserved</div>
+            <div class="credits">&copy; 2016 - <a href="#">NORD</a> All Rights Reserved</div>
         </div>
     </footer>
 
