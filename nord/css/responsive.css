@@ -1,0 +1,57 @@
+@media (max-width: 992px) {
+    #navigation label {
+        display: block;
+        text-align: right;
+    }
+
+    #navigation ul li,
+    #navigation label {
+        padding: 5px 5px;
+        float: right;
+        margin-top: 30px;
+    }
+
+    #navigation ul {
+        display: none;
+    }
+
+    #navigation input:checked + ul,
+    #navigation ul li {
+        display: block;
+    }
+    
+    #navigation input:checked + ul li a {
+        color: #262a34;
+    }
+    
+    #navigation input:checked + ul li a:hover {
+        color: #f9f9f9;
+    }
+    
+    .slide1 .second .phone,
+    .slide3 div .phone {
+        display: none;
+    }
+    
+    .slide1,
+    .slide3 .reviews {
+        width: 100%;
+    }
+    
+    .slide1 {
+        text-align: right;
+    }
+    
+    .slide3 .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .slide3 h1 {
+        padding-top: 10vh;
+    }
+    
+    .slide3 blockquote {
+        margin-top: 10vh;
+    }
+}
