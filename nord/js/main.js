@@ -12,7 +12,7 @@ slideShow.css({
 slideShow.find('.single-slide').each(function (index) {
     $(this).css({
         height: slideHeight + '%',
-        Top: slideHeight * index + '%'
+        top: slideHeight * index + '%'
     });
 });
 
@@ -29,21 +29,22 @@ $('.prev-slide').on('click', function () {
 
 // funkcja przesuwająca slajdy
 function slide(newSlideIndex) {
-    if (newSlideIndex < 0  || newSlideIndex > slideCount - 1) {
+    if (newSlideIndex < 0 || newSlideIndex > slideCount - 1) {
         return;
     }
-    
+
     var slideCaption = $('.slide-caption').eq(newSlideIndex);
     var Top = newSlideIndex * -100 + '%';
-    
+
     slideCaption.hide();
-    
-    slideShow.animate(
-        {'top': Top},
+
+    slideShow.animate({
+            'top': Top
+        },
         800,
         function () {
             slideIndex = newSlideIndex;
             slideCaption.fadeIn();
         }
-    );  
+    );
 };
