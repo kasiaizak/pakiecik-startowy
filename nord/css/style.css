@@ -26,8 +26,14 @@
 
 #slider .slider-arrows button {
     position: absolute;
-    right: 0;
+    right: 5px;
     z-index: 6;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+}
+
+#slider .slider-arrows button:focus {
+    outline: none;
 }
 
 #slider .slider-arrows .prev-slide {
