@@ -13,8 +13,7 @@ body,
     font-size: 15px;
 }
 
-p,
-#slide4 h1 {
+p {
     padding-top: 40px;
 }
 
@@ -22,6 +21,12 @@ p,
 h1 {
     font-size: 43px;
     font-weight: 700;
+}
+
+#slide1 h1,
+#slide3 h1,
+#slide4 h1 {
+    padding-top: 15vh;
 }
 
 h1 span,
