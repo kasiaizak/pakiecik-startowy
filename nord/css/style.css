@@ -4,6 +4,65 @@
     padding: 0;
 }
 
+/* stronicowanie */
+#slider {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+#slider .slide-show {
+    position: absolute;
+    width: 100%;
+}
+
+#slider .slide-show .single-slide {
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider .slider-arrows button {
+    position: absolute;
+    right: 0;
+    z-index: 6;
+}
+
+#slider .slider-arrows .prev-slide {
+    top: 40%;
+}
+
+#slider .slider-arrows .next-slide {
+    bottom: 40%;
+}
+
+/* tła */
+
+#slide1 {
+    background-image: linear-gradient(120deg, #f9f9f9 37%, #41e0d8 37%);
+}
+
+#slide2 {
+    background-image: linear-gradient(60deg, #262a34 65%, #f9f9f9 35%);
+}
+
+#slide3 {
+    background-image: linear-gradient(60deg, #f9f9f9 37%, #41e0d8 37%);
+}
+
+#slide4a {
+    background-color: #262a34;
+    height: 60%;
+}
+
+#slide4b {
+    background-color: #f9f9f9;
+    height: 40%;
+}
+
+/* globalne */
 body,
 #navigation ul li a,
 #navigation ul li a:visited {
@@ -17,7 +76,12 @@ p {
     padding-top: 40px;
 }
 
-/* fonts size & colors start */
+.vertical-center {
+    top: 50vh;
+    transform: translateY(-50%);
+}
+
+/* fonts size & colors */
 h1 {
     font-size: 43px;
     font-weight: 700;
@@ -57,45 +121,7 @@ footer a {
     padding: 5px 30px 5px 30px;
 }
 
-/* fonts size & colors end */
-
-/* bacgrounds start */
-
-#slide1,
-#slide2,
-#slide3 {
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-}
-
-#slide1 {
-    background-image: linear-gradient(120deg, #f9f9f9 37%, #41e0d8 37%);
-}
-
-#slide2 {
-    background-image: linear-gradient(60deg, #262a34 65%, #f9f9f9 35%);
-}
-
-#slide3 {
-    background-image: linear-gradient(60deg, #f9f9f9 37%, #41e0d8 37%);
-}
-
-#slide4 {
-    background-color: #262a34;
-}
-
-#slide5 {
-    background-color: #f9f9f9;
-}
-
-.vertical-center {
-    top: 50vh;
-    transform: translateY(-50%);
-}
-/* bacgrounds end */
-
-/* slide1 start */
+/* slide1 */
 
 #slide1 figure {
     padding-top: 20px;
@@ -133,9 +159,8 @@ footer a {
     padding-top: 15vh;
 }
 
-/* slide1 end */
 
-/* slide2 start */
+/* slide2 */
 
 #slide2 button {
     background-color: #41e0d8;
@@ -168,9 +193,8 @@ footer a {
     width: 20px;
 }
 
-/* slide2 end */
 
-/* slide3 start */
+/* slide3 */
 #slide3 .slide3-element {
     transform: translateY(-70vh);
 }
@@ -209,22 +233,19 @@ footer a {
     padding-top: 0;
 }
 
-/* slide3 end */
 
-/* slide4 start */
-
-#slide4 form,
+/* slide4 */
+#slide4a form,
 footer {
     padding-top: 60px;
     padding-bottom: 80px;
     width: 100%
 }
 
-#slide4 form input[type="email"] {
+#slide4a form input[type="email"] {
     background-color: #51555d;
     border: none;
     width: 40%;
     padding: 7px;
     color: #fff;
 }
-/* slide4 end */
