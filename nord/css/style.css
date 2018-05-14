@@ -87,7 +87,6 @@ h1 {
     font-weight: 700;
 }
 
-#slide1 h1,
 #slide3 h1,
 #slide4 h1 {
     padding-top: 15vh;
@@ -152,7 +151,7 @@ footer a {
 }
 
 #slide1 .second .phone {
-    transform: translateY(25%);
+    transform: translateY(-35%);
 }
 
 #slide1 .second .second-content {
@@ -195,20 +194,12 @@ footer a {
 
 
 /* slide3 */
-#slide3 .slide3-element {
-    transform: translateY(-70vh);
-}
-
 #slide3 .phone {
     background-image: url(../img/phone.png);
     background-repeat: no-repeat;
-    transform: translateY(30%) rotate(-30deg);
+    transform: translateY(35%) rotate(-30deg);
     height: 630px;
     width: 311px;;
-}
-
-#slide3 .slide3-element {
-    width: 100%;
 }
 
 #slide3 blockquote,
