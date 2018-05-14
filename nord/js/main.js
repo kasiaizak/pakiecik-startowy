@@ -10,7 +10,7 @@ slideShow.css({
 
 // ustawienie szerokości i pozycjonowanie wewnętrznych kontenerów
 slideShow.find('.single-slide').each(function (index) {
-    $(this).css({ //this - aktualny slajd na którym się znajdujemy
+    $(this).css({
         height: slideHeight + '%',
         Top: slideHeight * index + '%'
     });
@@ -33,7 +33,7 @@ function slide(newSlideIndex) {
         return;
     }
     
-    var slideCaption = $('.slide-caption').eq(newSlideIndex); //eq... opcjonalne - wybierze tylko aktualny opis
+    var slideCaption = $('.slide-caption').eq(newSlideIndex);
     var Top = newSlideIndex * -100 + '%';
     
     slideCaption.hide();
