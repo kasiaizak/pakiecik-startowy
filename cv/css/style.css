@@ -30,7 +30,7 @@ header {
 }
 
 section {
-    width: 65%;
+    width: 70%;
 }
 
 section, footer {
@@ -38,7 +38,7 @@ section, footer {
 }
 
 aside {
-    width: 35%;
+    width: 30%;
     background-color: #f4f4f4;
 }
 
@@ -81,11 +81,11 @@ section #cv .entry {
 }
 
 section #cv .entry .date {
-    width: 27%;
+    width: 25%;
 }
 
 section #cv .entry .description {
-    width: 73%;
+    width: 75%;
 }
 
 section #cv .entry .description span {
@@ -95,6 +95,10 @@ section #cv .entry .description span {
 section #cv .entry .description ul li, aside ul li {
     position: relative;
     margin-left: 15px;
+}
+
+aside img {
+    max-width: 100%;
 }
 
 aside #personal-info p, aside ul li {
