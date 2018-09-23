@@ -7,8 +7,7 @@
 body {
     font-family: 'Arimo', sans-serif;
     font-size: 12px;
-    width: 210mm;
-    height: 297mm;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     background-color: gray;
@@ -48,7 +47,7 @@ section, aside, section #cv .entry .date, section #cv .entry .description {
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 h2 {
