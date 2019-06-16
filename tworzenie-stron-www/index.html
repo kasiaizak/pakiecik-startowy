@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Tworzenie stron www</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Budowa strony internetowej</h1>
+            <p>Strony internetowe składają się z warstw. Najniższa z nich (ale w sumie najważniejsza), warstwa 0, to TREŚĆ. Kolejne to: warstwa 1 - semantyka za którą odpowiada kod HTML, warstwa 2 - prezentacja za którą odpowiadają CSS oraz warstwa 3 - interakcja, czyli JavaScript.<br>
+            Wyższe warstwy mogą wpływać na wszystkie warstwy poniżej, czyli: JavaScript > CSS > HTML > TREŚĆ.</p>
+        </header>
+        <section>
+            <h2>HTML - HyperText Markup Language</h2>
+            <p>HTML opakowuje i opisuje TREŚĆ strony - mówi przeglądarce o strukturze dokumentu i o znaczeniu treści na stronie (semantyka). Treść to wszystko co jest nośnikiem informacji: teksty, nagłówki, linki, listy, definicje, obrazki, video, formularze, itd.</p>
+            <p>HTML posiada swoją zdefiniowaną składnię i nie jest językiem programowania - jest językiem znaczników. Pliki mają rozszerzenie: .html</p>
+            <section>
+                <h3>Struktura HTML</h3>
+                <h4>Budowa znaczników:</h4>
+                <code>
+                    <span class="markup">&ltznacznik</span> <span class="attr">atrybut=</span><span class="val">"wartość"</span><span class="markup">&gt</span>treść<span class="markup">&lt/znacznik&gt</span>
+                </code>
+                <p>Jak się później przekonamy atrybuty nie zawsze są wymagane.</p>
+                <h4>Szkielet strony internetowej:</h4>
+                <p>Strona składa się z "głowy" <span class="def">&ltHEAD&gt</span> i "ciała" <span class="def">&ltBODY&gt</span> dokumentu. Warto wiedzieć, że znacznik <span class="def">&ltHEAD&gt</span> nie jest wymagany - strona internetowa może istnieć bez niego, ale w praktyce każda strona go zawiera.</p>
+                <code>
+                    <span class="markup">&ltHTML&gt</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="markup">&ltHEAD&gt</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="markup">&lt/HEAD&gt</span><br>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="markup">&ltBODY&gt</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="markup">&lt/BODY&gt</span><br>
+                    <span class="markup">&lt/HTML&gt</span>
+                </code>
+            </section>
+            <section>
+                <h3>Znaczniki w <span class="def">&ltHEAD&gt</span></h3>
+                <ul>
+                    <li><span class="def">&ltlink&gt</span> - pozwala podlinkować m.in. plik z arkuszami styli - CSS<br>
+                        <code>
+                            <span class="markup">&ltlink</span> <span class="attr">href=</span><span class="val">"style.css"</span> <span class="attr">rel=</span><span class="val">"stylesheet"</span><span class="markup">&gt</span>
+                        </code></li>
+                    <li><span class="def">&ltstyle&gt</span> - służy do osadzenia reguł CSS bezpośrednio w dokumencie HTML - obecnie rzadko stosowane.</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Znaczniki w <span class="def">&ltBODY&gt</span></h3>
+                <ul>
+                    <li><span class="def">&ltmain&gt</span> - główna część dokumentu</li>
+                    <li><span class="def">&ltsection&gt</span> - sekcja dokumentu, może zawierać kolejne sekcje - każda z nich powinna zawierać nagłówek h2-h6</li>
+                    <li><span class="def">&ltheader&gt</span> - nagłówek dokumentu / sekcji</li>
+                    <li><span class="def">&ltfooter&gt</span> - stopka dokumentu / sekcji</li>
+                    <li><span class="def">&lth1-h6&gt</span> - tekstowe nagłówki tytułowe dokumentu / sekcji (h1 jeden na całą stronę i powinien skrótowo, jak najlepiej opisać treść strony</li>
+                    <li><span class="def">&ltp&gt</span> - paragraf</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Linki</h3>
+                <ul>
+                    <li><a href="https://validator.w3.org/nu/#textarea">W2 NU VALIDATOR</a></li>
+                    <li><a href="https://www.w3.org/TR/html52/">specyfikacja</a></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h2>CSS - Cascading Style Sheets</h2>
+            <p>Kaskadowe arkusze stylów. Odpowiadają za prezentację wizualną na stronie - wpływają na wygląd elementów HTML na ekranie, wydrukach itp.<br>
+                CSS można umieszczać w sekcji <span class="def">&ltHEAD&gt</span> w znacznikach <span class="def">&ltstyle&gt</span>, ale czytelniejsze jest umieszczenie ich w oddzielnym pliku .css i importowanie w <span class="def">&ltHEAD&gt</span> za pomocą znacznika <span class="def">&ltlink&gt</span>.</p>
+            <section>
+                <h3>Składnia CSS to reguły</h3>
+                <code>
+                    <span class="selector">selektor</span> <span class="markup">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="attr">właściwość:</span> <span class="val">wartość</span>;<br>
+                <span class="markup">}</span>
+                </code>
+            </section>
+            <section>
+                <h3>Linki</h3>
+                <ul>
+                    <li><a href="https://www.w3.org/TR/CSS/">specyfikacja</a></li>
+                </ul>
+            </section>
+        </section>
+        <footer>Strona budowana podczas szkolenia WTF: Co ten frontend?</footer>
+    </main>
+</body>
+
+</html>

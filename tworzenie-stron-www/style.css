@@ -1,0 +1,41 @@
+body {
+    background: #fefefe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    color: #1460AA;
+}
+
+.def, code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.def {
+    font-weight: 900;
+}
+
+code {
+    background: #2d2240;
+    color: #fff;
+    line-height: 1.5rem;
+    padding: 5px;
+    display: block;
+    width: max-content;
+}
+
+.selector {
+    color: yellow;
+}
+
+.markup {
+    color: orange;
+}
+
+.attr {
+    color: #0097a7;
+}
+
+.val {
+    color: #b6d7a8;
+}
